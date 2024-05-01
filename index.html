@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="exchange-box">
+      <div class="dropdown">
+        <button class="dropbtn" id="from-button">
+          <img class="flag-img" src="./img/us.png" />USD
+        </button>
+        <div class="dropdown-content" id="from-currency-list">
+          <a href="#"><img class="flag-img" src="./img/us.png" />USD</a>
+          <a href="#"><img class="flag-img" src="./img/kr.png" />KRW</a>
+          <a href="#"><img class="flag-img" src="./img/jp.png" />JPY</a>
+        </div>
+      </div>
+      <div class="input-area">
+        <input type="number" id="from-input" onkeyup="convert('from')" />
+        <div style="text-align: right" id="from-currency-type">달러</div>
+      </div>
+    </div>
+
+    <h1 style="text-align: center">=</h1>
+
+    <div class="exchange-box">
+      <div class="dropdown">
+        <button class="dropbtn" id="to-button">
+          <img class="flag-img" src="./img/us.png" />USD
+        </button>
+        <div class="dropdown-content" id="to-currency-list">
+          <a href="#"><img class="flag-img" src="./img/us.png" />USD</a>
+          <a href="#"><img class="flag-img" src="./img/kr.png" />KRW</a>
+          <a href="#"><img class="flag-img" src="./img/jp.png" />JPY</a>
+        </div>
+      </div>
+      <div class="input-area">
+        <input type="number" id="to-input" onkeyup="convert('to')" />
+        <div style="text-align: right" id="to-currency-type">달러</div>
+      </div>
+    </div>
+  </body>
+</html>
